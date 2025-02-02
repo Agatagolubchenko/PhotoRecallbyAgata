@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Recall Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Picture Recall Game</h1>
+    
+    <div id="viewing-phase">
+        <p>Memorize these images. Time left: <span id="timer">2:00</span></p>
+        <div id="image-container"></div>
+        <button onclick="skipViewing()">Skip</button>
+    </div>
+
+    <div id="recall-phase" style="display: none;">
+        <p>Drag and drop the images into the correct order.</p>
+        <div id="photo-bank"></div>
+        <div id="empty-grid"></div>
+        <button onclick="checkResults()">Submit</button>
+        <p id="score-display"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
