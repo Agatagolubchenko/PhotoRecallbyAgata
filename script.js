@@ -1,4 +1,4 @@
-const imagePaths = [...Array(30).keys()].map(i => `images/image${i}.jpeg`);
+const imagePaths = [...Array(30).keys()].map(i => `images/image${i}.jpg`); // Change to .png if needed
 let placedImages = new Map(); 
 let usedImages = new Set(); // To track used images
 
